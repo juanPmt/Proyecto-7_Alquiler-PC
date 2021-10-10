@@ -1,4 +1,4 @@
-function consultar(){
+function consultar_client(){
     //Servicios de Cliente 
         $.ajax({
             url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",

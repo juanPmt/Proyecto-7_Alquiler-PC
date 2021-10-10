@@ -1,4 +1,4 @@
-function consultar(){
+function consultar_mensajes(){
     //Servicios de Mensaje 
         $.ajax({
             url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
@@ -20,7 +20,7 @@ function consultar(){
     }
     
     function mostrarRespuesta(items){
-        var tabla = `<table border="1">
+        var tablaM = `<table border="1">
                       <tr>
                         <th>ID</th>
                         <th>MESSAGETEXT</th>
@@ -28,12 +28,12 @@ function consultar(){
                       
         
         for (var i=0; i < items.length; i++) {
-            tabla +=`<tr>
+            tablaM +=`<tr>
                        <td>${items[i].id}</td>
                        <td>${items[i].messagetext}</td>
                     </tr>`;
         }
-        tabla +=`</table>`;
+        tablaM +=`</table>`;
     
-        $("#tabla").html(tabla);
+        $("#tablaM").html(tablaM);
     }

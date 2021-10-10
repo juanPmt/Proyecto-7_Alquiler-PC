@@ -1,4 +1,4 @@
-function consultar(){
+function consultar_computer(){
 //Nos trae desde el servidos la base de datos de la tabla computador
     $.ajax({
         url:"https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/computer/computer",
@@ -20,7 +20,7 @@ function consultar(){
 }
 
 function mostrarRespuesta(items){
-    const tabla = `<table border="1">
+    const tablaC = `<table border="1">
                   <tr>
                     <th>ID</th>
                     <th>BRAND</th>
@@ -31,7 +31,7 @@ function mostrarRespuesta(items){
                   
     
     for (var i=0; i < items.length; i++) {
-        tabla +=`<tr>
+        tablaC +=`<tr>
                    <td>${items[i].id}</td>
                    <td>${items[i].brand}</td>
                    <td>${items[i].model}</td>
@@ -39,7 +39,7 @@ function mostrarRespuesta(items){
                    <td>${items[i].name}</td>  
                 </tr>`;
     }
-    tabla +=`</table>`;
+    tablaC +=`</table>`;
 
-    $("#tabla").html(tabla);
+    $("#tablaC").html(tablaC);
 }

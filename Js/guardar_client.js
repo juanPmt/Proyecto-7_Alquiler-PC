@@ -1,4 +1,4 @@
-function guardar(){
+function guardar_client(){
     let cliente = {
         id: +$("#id").val(),
         name:  $("#name").val(),
@@ -7,7 +7,7 @@ function guardar(){
         name: $("#name").val()
     };
 
-    console.log("Se va a registrar el equipo", cliente);
+    console.log("Se va a registrar el cliente", cliente);
 
     $.ajax({
         url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
