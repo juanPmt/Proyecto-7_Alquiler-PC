@@ -20,7 +20,7 @@ function consultar_computer(){
 }
 
 function mostrarRespuesta(items){
-    const tablaC = `<table border="1">
+    const tablaCM = `<table border="1">
                   <tr>
                     <th>ID</th>
                     <th>BRAND</th>
@@ -31,7 +31,7 @@ function mostrarRespuesta(items){
                   
     
     for (var i=0; i < items.length; i++) {
-        tablaC +=`<tr>
+        tablaCM +=`<tr>
                    <td>${items[i].id}</td>
                    <td>${items[i].brand}</td>
                    <td>${items[i].model}</td>
@@ -39,7 +39,7 @@ function mostrarRespuesta(items){
                    <td>${items[i].name}</td>  
                 </tr>`;
     }
-    tablaC +=`</table>`;
+    tablaCM +=`</table>`;
 
-    $("#tablaC").html(tablaC);
+    $("#tablaCM").html(tablaCM);
 }

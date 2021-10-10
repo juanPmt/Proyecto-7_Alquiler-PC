@@ -4,9 +4,9 @@ function consultar_client(){
             url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
             type: 'GET',
             dataType: 'json',
-            success: function(respuesta){
-                console.log(respuesta.items);
-                mostrarRespuesta(respuesta.items);
+            success: function(respuestaCL){
+                console.log(respuestaCL.items);
+                mostrarRespuesta(respuestaCL.items);
             },
             error: function (xhr, status) {
                 alert('ha sucedido un problema');
@@ -19,8 +19,8 @@ function consultar_client(){
     
     }
     
-    function mostrarRespuesta(items){
-        var tabla = `<table border="1">
+    function mostrarRespuesta(itemsCL){
+        var tablaCL = `<table border="1">
                       <tr>
                         <th>ID</th>
                         <th>NAME</th>
@@ -29,15 +29,15 @@ function consultar_client(){
                       </tr>`;
                       
         
-        for (var i=0; i < items.length; i++) {
-            tabla +=`<tr>
-                       <td>${items[i].id}</td>
-                       <td>${items[i].name}</td>
-                       <td>${items[i].email}</td>
-                       <td>${items[i].age}</td>
+        for (var i=0; i < itemsCL.length; i++) {
+            tablaCL +=`<tr>
+                       <td>${itemsCL[i].id}</td>
+                       <td>${itemsCL[i].name}</td>
+                       <td>${itemsCL[i].email}</td>
+                       <td>${itemsCL[i].age}</td>
                     </tr>`;
         }
-        tabla +=`</table>`;
+        tablaCL +=`</table>`;
     
-        $("#tabla").html(tabla);
+        $("#tablaCL").html(tablaCL);
     }

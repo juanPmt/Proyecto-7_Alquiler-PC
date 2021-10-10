@@ -4,9 +4,9 @@ function consultar_mensajes(){
             url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
             type: 'GET',
             dataType: 'json',
-            success: function(respuesta){
-                console.log(respuesta.items);
-                mostrarRespuesta(respuesta.items);
+            success: function(respuestaM){
+                console.log(respuestaM.items);
+                mostrarRespuesta(respuestaM.items);
             },
             error: function (xhr, status) {
                 alert('ha sucedido un problema');
@@ -19,18 +19,18 @@ function consultar_mensajes(){
     
     }
     
-    function mostrarRespuesta(items){
+    function mostrarRespuesta(itemsM){
         var tablaM = `<table border="1">
                       <tr>
                         <th>ID</th>
-                        <th>MESSAGETEXT</th>
+                        <th>MESSAGE TEXT</th>
                       </tr>`;
                       
         
-        for (var i=0; i < items.length; i++) {
+        for (var i=0; i < itemsM.length; i++) {
             tablaM +=`<tr>
-                       <td>${items[i].id}</td>
-                       <td>${items[i].messagetext}</td>
+                       <td>${itemsM[i].id}</td>
+                       <td>${itemsM[i].messagetext}</td>
                     </tr>`;
         }
         tablaM +=`</table>`;
