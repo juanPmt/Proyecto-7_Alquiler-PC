@@ -31,7 +31,7 @@ function mostrarRespuestaCom(items){
        
         tablaCM +=`<tr>
                    <td>${items[i].id}</td>
-                   <td>${items[i].brand}</td>
+                   <td><link href='./detalle.html'>${items[i].brand}</link></td>
                    <td>${items[i].model}</td>
                    <td>${items[i].category_id}</td>
                    <td>${items[i].name}</td>  
