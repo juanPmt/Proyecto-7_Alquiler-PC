@@ -4,7 +4,7 @@ function guardar_computer(){
         brand:  $("#MARCA").val(),
         model: $("#MODELO").val(),
         category_id: +$("#CATEGORY_ID").val(),
-        name: +$("#NOMBREC").val()
+        name: $("#NOMBREC").val(),
     };
 
     console.log("Se va a registrar el equipo", computador);

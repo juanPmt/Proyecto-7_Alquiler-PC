@@ -1,7 +1,7 @@
 function guardar_mensajes(){
     let mensaje = {
         id: +$("#IDM").val(),
-        messajetext: +$("#mensaje").val()
+        messajetext: $("#mensaje").val()
     };
 
     console.log("Se va a registrar el mensaje", mensaje);
