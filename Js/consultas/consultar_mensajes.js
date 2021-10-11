@@ -20,6 +20,8 @@ function consultar_mensajes(){
     }
     
     function mostrarRespuesta(itemsM){
+        console.log(itemsM.id);
+        console.log(itemsM.messagetext);
         var tablaM = `<table border="1">
                       <tr>
                         <th>ID</th>

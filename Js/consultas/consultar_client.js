@@ -4,22 +4,22 @@ function consultar_client(){
             url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
             type: 'GET',
             dataType: 'json',
-            success: function(respuestaCL){
-                console.log(respuestaCL.items);
-                mostrarRespuesta(respuestaCL.items);
+            success: function(respuesta){
+                console.log(respuesta.items);
+                mostrarRespuestaCli(respuesta.items);
             },
             error: function (xhr, status) {
                 alert('ha sucedido un problema');
             },
             complete: function (xhr, status) {
-                //console.log(status);
+                console.log(status);
             }
             
         });
     
     }
     
-    function mostrarRespuesta(itemsCL){
+    function mostrarRespuestaCli(items){
         var tablaCL = `<table border="1">
                       <tr>
                         <th>ID</th>
@@ -29,12 +29,12 @@ function consultar_client(){
                       </tr>`;
                       
         
-        for (var i=0; i < itemsCL.length; i++) {
+        for (var i=0; i < items.length; i++) {
             tablaCL +=`<tr>
-                       <td>${itemsCL[i].id}</td>
-                       <td>${itemsCL[i].name}</td>
-                       <td>${itemsCL[i].email}</td>
-                       <td>${itemsCL[i].age}</td>
+                       <td>${items[i].id}</td>
+                       <td>${items[i].name}</td>
+                       <td>${items[i].email}</td>
+                       <td>${items[i].age}</td>
                     </tr>`;
         }
         tablaCL +=`</table>`;

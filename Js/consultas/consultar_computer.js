@@ -6,31 +6,29 @@ function consultar_computer(){
         dataType: 'json',
         success: function(respuesta){
             console.log(respuesta.items);
-            mostrarRespuesta(respuesta.items);
+            mostrarRespuestaCom(respuesta.items);
         },
         error: function (xhr, status) {
             alert('ha sucedido un problema');
         },
         complete: function (xhr, status) {
             console.log(status);
-        }
-        
-    });
-
+        }        
+    });    
 }
 
-function mostrarRespuesta(items){
-    const tablaCM = `<table border="1">
+function mostrarRespuestaCom(items){
+    let tablaCM = `<table border="1">
                   <tr>
                     <th>ID</th>
                     <th>BRAND</th>
                     <th>MODEL</th>
                     <th>CATEGORY_ID</th>
                     <th>NAME</th>
-                  </tr>`;
-                  
+                  </tr>`;                  
     
-    for (var i=0; i < items.length; i++) {
+    for (let i=0; i < items.length; i++) {
+       
         tablaCM +=`<tr>
                    <td>${items[i].id}</td>
                    <td>${items[i].brand}</td>
