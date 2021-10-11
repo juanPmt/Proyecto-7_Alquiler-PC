@@ -1,4 +1,4 @@
-function eliminar(identificador){
+function eliminar_client(identificador){
 
     console.log("ejecutando funcion para eliminar");
 
