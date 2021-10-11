@@ -3,7 +3,7 @@ function guardar_client(){
         id: +$("#IDN").val(),
         name:  $("#NAME").val(),
         email: $("#EMAIL").val(),
-        age: +$("AGE").val()
+        age: $("AGE").val()
     };
 
     console.log("Se va a registrar el cliente", cliente);

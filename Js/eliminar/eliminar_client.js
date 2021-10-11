@@ -9,7 +9,7 @@ function eliminar_client(identificador){
     console.log(cliente);
 
     $.ajax({
-        url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client/:id",
+        url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
         type: 'DELETE',
         dataType: 'json',
         headers: {

@@ -12,7 +12,7 @@ function actualizar(){
     console.log(mensaje);
 
     $.ajax({
-        url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message/:id",
+        url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",
         type: 'PUT',
         dataType: 'json',
         headers: {
