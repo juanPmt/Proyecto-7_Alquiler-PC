@@ -30,11 +30,15 @@ function mostrarRespuestaCom(items){
     for (let i=0; i < items.length; i++) {
        
         tablaCM +=`<tr>
-                   <td><a href="../detalle_computer.html">${items[i].id}</a></td>
+                   <td>${items[i].id}</td>
                    <td>${items[i].name}</td> 
                    <td>${items[i].brand}</td>
                    <td>${items[i].model}</td>
-                   <td>${items[i].category_id}</td>                   
+                   <td>${items[i].category_id}</td>
+                   <td>
+                        <button onclick="eliminar(${items[i].id})">Eliminar</button>
+                        <a href="detalle_computer.html?id=${items[i].id}">Editar</a>
+                   </td>                   
                 </tr>`;
     }
     tablaCM +=`</table>`;

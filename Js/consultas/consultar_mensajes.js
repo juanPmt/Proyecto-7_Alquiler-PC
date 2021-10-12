@@ -29,8 +29,12 @@ function consultar_mensajes(){
         
         for (var i=0; i < items.length; i++) {
             tablaM +=`<tr>
-                       <td><a href="../detalle_client.html">${items[i].id}</a></td>
+                       <td>${items[i].id}</td>
                        <td>>${items[i].messagetext}</td>
+                       <td>
+                        <button onclick="eliminar(${items[i].id})">Eliminar</button>
+                        <a href="detalle_mensajes.html?id=${items[i].id}">Editar</a>
+                   </td>
                     </tr>`;
         }
         tablaM +=`</table>`;

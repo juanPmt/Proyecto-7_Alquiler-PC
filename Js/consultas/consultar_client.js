@@ -32,9 +32,13 @@ function consultar_client(){
         for (var i=0; i < items.length; i++) {
             tablaCL +=`<tr>
                        <td>${items[i].id}</td>
-                       <td><a href="../detalle_client.html">${items[i].name}</a></td>
+                       <td>${items[i].name}</td>
                        <td>${items[i].email}</td>
                        <td>${items[i].age}</td>
+                       <td>
+                        <button onclick="eliminar(${items[i].id})">Eliminar</button>
+                        <a href="detalle_client.html?id=${items[i].id}">Editar</a>
+                   </td>
                     </tr>`;
         }
         tablaCL +=`</table>`;
