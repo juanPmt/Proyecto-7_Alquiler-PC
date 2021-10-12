@@ -30,8 +30,8 @@ function mostrarRespuestaCom(items){
     for (let i=0; i < items.length; i++) {
        
         tablaCM +=`<tr>
-                   <td>${items[i].id}</td>
-                   <td><a href="../detalle_computer.html">${items[i].name}</a></td> 
+                   <td><a href="../detalle_computer.html">${items[i].id}</a></td>
+                   <td>${items[i].name}</td> 
                    <td>${items[i].brand}</td>
                    <td>${items[i].model}</td>
                    <td>${items[i].category_id}</td>                   

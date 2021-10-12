@@ -20,8 +20,6 @@ function consultar_mensajes(){
     }
     
     function mostrarRespuesta(items){
-        console.log(items.id);
-        console.log(items.messagetext);
         var tablaM = `<table border="1">
                       <tr>
                         <th>ID</th>
@@ -31,8 +29,8 @@ function consultar_mensajes(){
         
         for (var i=0; i < items.length; i++) {
             tablaM +=`<tr>
-                       <td>${items[i].id}</td>
-                       <td>${items[i].messagetext}</td>
+                       <td><a href="../detalle_client.html">${items[i].id}</a></td>
+                       <td>>${items[i].messagetext}</td>
                     </tr>`;
         }
         tablaM +=`</table>`;
