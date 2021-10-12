@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 export function consultarById(id){   
     $.ajax({
-        url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client/:id",
+        url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client/"+id,
         type: 'GET',
         dataType: 'json',
         success: function(respuesta){
