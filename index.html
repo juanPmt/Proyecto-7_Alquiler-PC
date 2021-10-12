@@ -23,7 +23,6 @@
     <br><br>
 
     <fieldset>
-
         <label for="ID">ID:</label>
         <input type="number" id="IDC" name="IDC">
         <label for="MARCA">MARCA: </label>
@@ -35,12 +34,15 @@
         <label for="NOMBRE">NOMBRE: </label>
         <input type="text" id="NOMBREC" name="NOMBREC">
         <br><br>
-        <button onclick="guardar_computer()">Creación computadores</button><br>
-
+        <button onclick="guardar_computer()">Registrar computador</button><br>
+    </fieldset>
+    <fieldset
+    ><button id="consultarCM" onclick="consultar_computer()">CONSULTAR TABLA COMPUTADORES</button><br>
+        <div id="tablaCM"></div>
     </fieldset>
     <br><br>
-    <fieldset>
 
+    <fieldset>
         <label for="ID">ID:</label>
         <input type="number" id="IDN" name="IDN">
         <label for="NAME">NOMBRE: </label>
@@ -50,33 +52,25 @@
         <label for="AGE">EDAD:</label>
         <input type="number" id="AGE" name="AGE">
         <br><br>
-        <button onclick="guardar_client()">Registro de clientes:</button><br>
-
+        <button onclick="guardar_client()">Registrar cliente:</button><br>
+    </fieldset>
+    <fieldset><button id="consultarCL" onclick="consultar_client()">CONSULTAR TABLA CLIENTES</button><br>
+        <div id="tablaCL"></div>
     </fieldset>
     <br><br>
-    <fieldset>
 
-        <button onclick="guardar_mensajes()">Registro de mensaje:</button><br>
+    <fieldset>
+        <button onclick="guardar_mensajes()">Registrar mensaje:</button><br>
         <label for="ID">ID:</label>
         <input type="number" id="IDM" name="IDM">
-        <textarea type="text" id="mensaje" cols="40" rows="5" style="resize: both;"> 
+        <textarea type="text" id="mensaje" cols="40" rows="5" style="resize: both;">
         </textarea>
-
+    </fieldset>
+    <fieldset><button id="consultarM" onclick="consultar_mensajes()">CONSULTAR TABLA MENSAJES</button><br>
+        <div id="tablaM"></div>
     </fieldset>
     <br><br>
-
-    <div style="width:100%; height:100%">
-        <fieldset><button id="consultarCM" onclick="consultar_computer()">CONSULTAR TABLA COMPUTADORES</button><br>
-            <div id="tablaCM"></div>
-        </fieldset>
-        <fieldset><button id="consultarCL" onclick="consultar_client()">CONSULTAR TABLA CLIENTES</button><br>
-            <div id="tablaCL"></div>
-        </fieldset>
-        <fieldset><button id="consultarM" onclick="consultar_mensajes()">CONSULTAR TABLA MENSAJES</button><br>
-            <div id="tablaM"></div>
-        </fieldset>
-    </div>
-
+   
 </body>
 
 </html>

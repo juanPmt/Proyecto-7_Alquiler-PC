@@ -30,7 +30,7 @@ function consultar(){
         for (var i=0; i < items.length; i++) {
             tabla +=`<tr>
                        <td>${items[i].id}</td>
-                       <td>${items[i].messagetext}</td>
+                       <td>><a href="../detalle_client.html">${items[i].messagetext}</a></td>
                     </tr>`;
         }
         tabla +=`</table>`;

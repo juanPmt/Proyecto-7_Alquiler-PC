@@ -32,7 +32,7 @@ function consultar_client(){
         for (var i=0; i < items.length; i++) {
             tablaCL +=`<tr>
                        <td>${items[i].id}</td>
-                       <td>${items[i].name}</td>
+                       <td><a href="../detalle_client.html">${items[i].name}</a></td>
                        <td>${items[i].email}</td>
                        <td>${items[i].age}</td>
                     </tr>`;

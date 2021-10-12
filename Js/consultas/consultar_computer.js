@@ -21,20 +21,20 @@ function mostrarRespuestaCom(items){
     let tablaCM = `<table border="1">
                   <tr>
                     <th>ID</th>
+                    <th>NAME</th>
                     <th>BRAND</th>
                     <th>MODEL</th>
-                    <th>CATEGORY_ID</th>
-                    <th>NAME</th>
+                    <th>CATEGORY_ID</th>                    
                   </tr>`;                  
     
     for (let i=0; i < items.length; i++) {
        
         tablaCM +=`<tr>
                    <td>${items[i].id}</td>
-                   <td><link href='./detalle.html'>${items[i].brand}</link></td>
+                   <td><a href="../detalle_computer.html">${items[i].name}</a></td> 
+                   <td>${items[i].brand}</td>
                    <td>${items[i].model}</td>
-                   <td>${items[i].category_id}</td>
-                   <td>${items[i].name}</td>  
+                   <td>${items[i].category_id}</td>                   
                 </tr>`;
     }
     tablaCM +=`</table>`;
