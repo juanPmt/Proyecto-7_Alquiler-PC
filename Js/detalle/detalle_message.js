@@ -27,6 +27,6 @@ function consultarById(id){
 }
 
 function llenarMessage(item){
-    $("#id").val(item.id);
-    $("#messagetext").val(item.messagetext);
+    $("#IDM").val(item.id);
+    $("#mensaje2").val(item.messagetext);
 }
