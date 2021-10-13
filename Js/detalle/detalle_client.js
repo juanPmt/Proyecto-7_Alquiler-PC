@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    
     let searchParams = new URLSearchParams(window.location.search)
     if (searchParams.has('id')){
         let id = searchParams.get('id')
@@ -6,7 +7,7 @@ $(document).ready(function () {
     }
 });
 
-export function consultarByIdCl(id){   
+function consultarByIdCl(id){   
     $.ajax({
         url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client/"+id,
         type: 'GET',

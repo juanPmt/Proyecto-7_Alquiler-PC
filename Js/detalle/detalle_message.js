@@ -1,6 +1,7 @@
 $(document).ready(function () {
     let searchParams = new URLSearchParams(window.location.search)
     if (searchParams.has('id')){
+        console.log("Entre a mensajes")
         let id = searchParams.get('id')
         consultarById(id);
     }
