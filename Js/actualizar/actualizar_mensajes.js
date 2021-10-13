@@ -1,4 +1,4 @@
-function actualizar(){
+function actualizar_mensajes(){
     console.log("ejecutando funcion para actualizar");
 
     let mensaje = {

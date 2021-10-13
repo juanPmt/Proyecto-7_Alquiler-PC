@@ -1,15 +1,14 @@
 $(document).ready(function () {
     let searchParams = new URLSearchParams(window.location.search)
     if (searchParams.has('id')){
-        console.log("Entre a mensajes")
         let id = searchParams.get('id')
-        consultarById(id);
+        consultarByIdM(id);
     }
 });
 
-function consultarById(id){
+function consultarByIdM(id){
     $.ajax({
-        url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message"+id,
+        url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message/"+id,
         type: 'GET',
         dataType: 'json',
         success: function(respuesta){
@@ -28,6 +27,6 @@ function consultarById(id){
 }
 
 function llenarMessage(item){
-    $("#IDM").val(item.id);
+    $("#IDM2").val(item.id);
     $("#mensaje2").val(item.messagetext);
 }

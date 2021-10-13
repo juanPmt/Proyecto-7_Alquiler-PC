@@ -1,4 +1,4 @@
-function actualizarComputer(){
+function actualizar_computer(){
     //Funcion para actualizar computador
     let computer = {
         id: +$("#IDC2").val(),
