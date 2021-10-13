@@ -32,7 +32,7 @@ function consultar_mensajes(){
                        <td>${items[i].id}</td>
                        <td>>${items[i].messagetext}</td>
                        <td>
-                        <button onclick="eliminar(${items[i].id})">Eliminar</button>
+                        <button onclick="eliminar_mensajes(${items[i].id})">Eliminar</button>
                         <a href="detalle_mensajes.html?id=${items[i].id}">Editar</a>
                    </td>
                     </tr>`;

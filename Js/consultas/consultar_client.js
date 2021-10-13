@@ -36,7 +36,7 @@ function consultar_client(){
                        <td>${items[i].email}</td>
                        <td>${items[i].age}</td>
                        <td>
-                        <button onclick="eliminar(${items[i].id})">Eliminar</button>
+                        <button onclick="eliminar_client(${items[i].id})">Eliminar</button>
                         <a href="detalle_client.html?id=${items[i].id}">Editar</a>
                    </td>
                     </tr>`;

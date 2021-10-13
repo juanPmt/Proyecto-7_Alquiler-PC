@@ -1,4 +1,4 @@
-function eliminarComputer(i){
+function eliminar_computer(i){
     // eliminar un elemento del computador
     let computer = {
         id: +i
@@ -18,6 +18,8 @@ function eliminarComputer(i){
             }
         },
     });
+
+    consultar_computer();
 
 
 }

@@ -18,10 +18,12 @@ function eliminar_client(identificador){
         data: JSON.stringify(cliente),
         statusCode:{
             204:function(){
-                alert('Se ha eliminado el computador');
+                alert('Se ha eliminado el cliente');
             }
         },
     });
+    
+    consultar_client();
 
 
 }

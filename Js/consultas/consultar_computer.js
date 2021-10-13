@@ -36,7 +36,7 @@ function mostrarRespuestaCom(items){
                    <td>${items[i].model}</td>
                    <td>${items[i].category_id}</td>
                    <td>
-                        <button onclick="eliminar(${items[i].id})">Eliminar</button>
+                        <button onclick="eliminar_computer(${items[i].id})">Eliminar</button>
                         <a href="detalle_computer.html?id=${items[i].id}">Editar</a>
                    </td>                   
                 </tr>`;

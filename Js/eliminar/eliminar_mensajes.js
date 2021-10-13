@@ -1,4 +1,4 @@
-function eliminar(identificador){
+function eliminar_mensajes(identificador){
     console.log("ejecutando funcion para eliminar");
 
     let mensaje = {
@@ -21,6 +21,8 @@ function eliminar(identificador){
             }
         },
     });
+
+    consultar_mensajes();
 
 
 }
