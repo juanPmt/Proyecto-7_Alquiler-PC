@@ -2,11 +2,11 @@ $(document).ready(function () {
     let searchParams = new URLSearchParams(window.location.search)
     if (searchParams.has('id')){
         let id = searchParams.get('id')
-        consultarById(id);
+        consultarByIdCOM(id);
     }
 });
 
-function consultarById(id){
+function consultarByIdCOM(id){
     $.ajax({
         url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/computer/computer/"+id,
         type: 'GET',
@@ -27,9 +27,9 @@ function consultarById(id){
 }
 
 function llenarComputer(item){
-    $("#id").val(item.id);
-    $("#brand").val(item.brand);
-    $("#model").val(item.model);
-    $("#category_id").val(item.category_id);
-    $("#name").val(item.name);
+    $("#IDC2").val(item.id);
+    $("#MARCA2").val(item.brand);
+    $("#MODELO2").val(item.model);
+    $("#CATEGORY_ID2").val(item.category_id);
+    $("#NAMEC2").val(item.name);
 }

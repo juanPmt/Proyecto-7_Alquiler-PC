@@ -30,7 +30,7 @@ function consultar_mensajes(){
         for (var i=0; i < items.length; i++) {
             tablaM +=`<tr>
                        <td>${items[i].id}</td>
-                       <td>>${items[i].messagetext}</td>
+                       <td>${items[i].messagetext}</td>
                        <td>
                         <button onclick="eliminar_mensajes(${items[i].id})">Eliminar</button>
                         <a href="detalle_mensajes.html?id=${items[i].id}">Editar</a>

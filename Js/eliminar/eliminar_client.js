@@ -24,6 +24,4 @@ function eliminar_client(identificador){
     });
     
     consultar_client();
-
-
 }

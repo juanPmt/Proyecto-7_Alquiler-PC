@@ -1,11 +1,11 @@
 function actualizarComputer(){
     //Funcion para actualizar computador
     let computer = {
-        id: +$("#id").val(),
-        brand: $("#brand").val(),
-        model: +$("#model").val(),
-        category_id: $("#category_id").val(),
-        name: $("#name").val()
+        id: +$("#IDC2").val(),
+        brand:  $("#MARCA2").val(),
+        model: $("#MODELO2").val(),
+        category_id: +$("#CATEGORY_ID2").val(),
+        name: $("#NOMBREC2").val(),
     };
 
         $.ajax({

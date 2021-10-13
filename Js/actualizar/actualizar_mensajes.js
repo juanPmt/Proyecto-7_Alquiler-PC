@@ -2,11 +2,8 @@ function actualizar(){
     console.log("ejecutando funcion para actualizar");
 
     let mensaje = {
-        id: +$("#id").val(),
-        brand: $("#brand").val(),
-        model: +$("#model").val(),
-        category_id: $("#category_id").val(),
-        name: $("#name").val()
+        id: +$("#IDM2").val(),
+        messagetext: $("#mensaje2").val(),
     };
 
     console.log(mensaje);

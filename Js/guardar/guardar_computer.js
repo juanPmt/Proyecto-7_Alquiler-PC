@@ -7,7 +7,7 @@ function guardar_computer(){
         name: $("#NOMBREC").val(),
     };
 
-    console.log("Se va a registrar el equipo", computador);
+    console.log("Se va a registrar el equipo", typeof computador.name);
 
     $.ajax({
         url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/computer/computer",

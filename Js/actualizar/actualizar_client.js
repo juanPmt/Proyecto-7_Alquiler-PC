@@ -2,10 +2,10 @@ function actualizar_client(){
     console.log("ejecutando funcion para actualizar");
 
     let cliente = {
-        id: +$("#IDN").val(),
-        name:  $("#NAME").val(),
-        email: $("#EMAIL").val(),
-        age: +$("AGE").val()
+        id: +$("#IDN2").val(),
+        name:  $("#NAME2").val(),
+        email: $("#EMAIL2").val(),
+        age: +$("#AGE2").val()
     };
 
     console.log(cliente);

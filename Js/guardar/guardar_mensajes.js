@@ -1,10 +1,10 @@
 function guardar_mensajes(){
     let mensaje = {
         id: +$("#IDM").val(),
-        messajetext: $("#mensaje").val()
+        messagetext: $("#mensaje").val(),
     };
 
-    console.log("Se va a registrar el mensaje", mensaje);
+    //console.log("Se va a registrar el mensaje", typeof mensajeD.messajetext);
 
     $.ajax({
         url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message",

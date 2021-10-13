@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,30 @@
 
     <script type="text/javascript" src="./consultas/consultar_client.js"></script>
 </head>
+
 <body>
     <fieldset>
         <h1 align="center">DETALLE CLIENTE</h1>
     </fieldset>
     <br><br>
-    
+    <fieldset style="border:6px groove #ccc;">
+        <fieldset style="border:6px groove #ccc; background:#f8f8e0;">
+            <legend class="titulo" style="font-weight:bold;">INFORMACION DEL CLIENTE: </legend>
+            <br><br>
+            <label id="label-id" for="ID">ID:</label>
+            <input type="text" id="IDN2" name="IDN2" disabled>
+            <label for="MARCA">NAME: </label>
+            <input type="text" id="NAME2" name="NAME2">
+            <label for="EMAIL">EMAIL: </label>
+            <input type="text" id="EMAIL2" name="EMAIL2">
+            <label for="AGE">AGE:</label>
+            <input type="text" id="AGE2" name="AGE2">
+            <br><br>
+            <button style="margin-left: 400px" name="button">EDITAR</button>
+            <br><br>
+        </fieldset>
+        <a href="index.html">Volver al inicio</a>
+
 </body>
+
 </html>

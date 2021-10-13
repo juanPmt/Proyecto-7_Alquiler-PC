@@ -23,6 +23,4 @@ function eliminar_mensajes(identificador){
     });
 
     consultar_mensajes();
-
-
 }

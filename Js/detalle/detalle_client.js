@@ -2,11 +2,11 @@ $(document).ready(function () {
     let searchParams = new URLSearchParams(window.location.search)
     if (searchParams.has('id')){
         let id = searchParams.get('id')
-        consultarById(id);
+        consultarByIdCl(id);
     }
 });
 
-export function consultarById(id){   
+export function consultarByIdCl(id){   
     $.ajax({
         url: "https://ga61db958975b8f-alquilerpc.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client/"+id,
         type: 'GET',
@@ -27,8 +27,8 @@ export function consultarById(id){
 }
 
 function llenarClient(item){
-    $("#id").val(item.id);
-    $("#name").val(item.name);
-    $("#email").val(item.email);
-    $("#age").val(item.age);
+    $("#IDN2").val(item.id);
+    $("#NAME2").val(item.name);
+    $("#EMAIL2").val(item.email);
+    $("#AGE2").val(item.age);
 }

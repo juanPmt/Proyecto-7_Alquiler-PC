@@ -20,6 +20,4 @@ function eliminar_computer(i){
     });
 
     consultar_computer();
-
-
 }
