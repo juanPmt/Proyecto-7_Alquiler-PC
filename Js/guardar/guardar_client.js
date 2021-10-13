@@ -22,4 +22,6 @@ function guardar_client(){
             }
         },
     });
+
+    consultar_client();
 }

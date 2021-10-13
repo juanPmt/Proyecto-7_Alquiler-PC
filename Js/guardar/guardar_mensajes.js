@@ -20,4 +20,6 @@ function guardar_mensajes(){
             }
         },
     });
+
+    consultar_mensajes();
 }

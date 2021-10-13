@@ -23,4 +23,6 @@ function guardar_computer(){
             }
         },
     });
+    
+    consultar_computer();
 }
